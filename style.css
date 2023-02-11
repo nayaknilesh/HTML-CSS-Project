@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    height: 50px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 18px;
+}
+.menu a:hover{
+   color: blueviolet;
+}
+
+.body{
+    background-color: burlywood;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.mob-tab{
+    display: none;
+}
+
+@media screen {
+    .mob-tab{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        background-color: aquamarine;
+        display: flex;
+        align-items: center;
+    
+    }
+    .tabs{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        list-style-type: none;
+    }
+    .tabs a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: rgb(70,66,66);
+        font-weight: 600;
+    }
+    .tabs a:hover{
+        color: rgb(175,22,132);
+    }
+    .tabs a i{
+        font-size: 20px;
+        margin: 5px;
+    }
+}
